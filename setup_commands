@@ -1,0 +1,1 @@
+'function Set-Title { param([string] $title) $Host.UI.RawUI.WindowTitle = $title }' | Out-File -FilePath $profile
