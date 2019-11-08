@@ -1,4 +1,5 @@
-'function Set-Title { param([string] $title) $Host.UI.RawUI.WindowTitle = $title }' | Out-File -FilePath $profile
-
+'
+function Set-Title { param([string] $title) $Host.UI.RawUI.WindowTitle = $title }
 New-Alias touch New-Item
 New-Alias e explorer
+' | Out-File -FilePath $profile
