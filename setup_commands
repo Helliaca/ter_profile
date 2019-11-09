@@ -9,10 +9,19 @@ function Track-Process {
     while(1) {
         $processes = Get-Process
         foreach ($diff in (Compare-Object -ReferenceObject $processes -DifferenceObject $processes_last)) {
-            "(" + @($processes).count + ") " + $(if($diff.SideIndicator -eq "<=") {"+"} else {"-"}) + " " + $diff.InputObject.Name
+            if($diff.SideIndicator -eq "<=") {
+                Write-Host "(" @($processes).count "/" @($diff.Threads).count ")" -ForegroundColor Black -BackgroundColor Yellow -NoNewline;
+                Write-Host (" + " + $diff.InputObject.Name) -ForegroundColor Green -NoNewline;
+            }
+            else {
+                Write-Host "(" @($processes).count "/" @($diff.Threads).count ")" -ForegroundColor Black -BackgroundColor Yellow -NoNewline;
+                Write-Host (" - " + $diff.InputObject.Name) -ForegroundColor Red -NoNewline;
+                Write-Host ($diff.StartTime) -ForegroundColor Gray -NoNewline;
+            }
+            Write-Host ""
         }
         $processes_last = $processes
-        Start-Sleep 0.1
+        Start-Sleep 1.0
     }
 }
 
