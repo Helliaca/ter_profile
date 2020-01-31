@@ -46,13 +46,13 @@
 	    "fontSize" : 10,
 	    "guid" : "{ba50f801-2d96-4517-a737-575f32f0fb61}",
 	    "historySize" : 9001,
-	    "icon" : "C:\\Users\\kahl\\win_terminal\\ubuntu_icon.png",
+	    "icon" : "C:\\Users\\kahl\\ter_profile\\res\\ubuntu_icon.png",
 	    "name" : "Ubuntu",
 	    "padding" : "0, 0, 0, 0",
 	    "snapOnInput" : true,
 	    "startingDirectory" : "%USERPROFILE%",
 	    "useAcrylic" : false,
-	    "backgroundImage" : "C:\\Users\\kahl\\win_terminal\\ubuntu_bg.jpg"
+	    "backgroundImage" : "C:\\Users\\kahl\\ter_profile\\res\\ubuntu_bg.jpg"
 	},
 	{
 	    "guid": "{00000000-0000-0000-ba54-000000000002}",
@@ -65,7 +65,7 @@
 	    "fontFace" : "Consolas",
 	    "fontSize" : 10,
 	    "historySize" : 9001,
-	    "icon" : "C:\\Users\\kahl\\win_terminal\\git-bash_32px.ico",
+	    "icon" : "C:\\Users\\kahl\\ter_profile\\res\\git-bash_32px.ico",
 	    "name" : "Bash",
 	    "padding" : "0, 0, 0, 0",
 	    "snapOnInput" : true,
