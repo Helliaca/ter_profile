@@ -1,3 +1,5 @@
+new-item -type file -path $profile -force
+
 '
 
 function Set-Title { param([string] $title) $Host.UI.RawUI.WindowTitle = $title }
