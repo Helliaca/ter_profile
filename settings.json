@@ -39,20 +39,20 @@
 	    "acrylicOpacity" : 1.0,
 	    "closeOnExit" : true,
 	    "colorScheme" : "Campbell",
-	    "commandline" : "ubuntu",
+	    "commandline" : "ubuntu2004",
 	    "cursorColor" : "#FFFFFF",
 	    "cursorShape" : "bar",
 	    "fontFace" : "Consolas",
 	    "fontSize" : 10,
 	    "guid" : "{ba50f801-2d96-4517-a737-575f32f0fb61}",
 	    "historySize" : 9001,
-	    "icon" : "C:\\Users\\kahl\\ter_profile\\res\\ubuntu_icon.png",
+	    "icon" : "C:\\Users\\Kahl\\ter_profile\\res\\ubuntu_icon.png",
 	    "name" : "Ubuntu",
 	    "padding" : "0, 0, 0, 0",
 	    "snapOnInput" : true,
 	    "startingDirectory" : "%USERPROFILE%",
 	    "useAcrylic" : false,
-	    "backgroundImage" : "C:\\Users\\kahl\\ter_profile\\res\\ubuntu_bg.jpg"
+	    "backgroundImage" : "C:\\Users\\Kahl\\ter_profile\\res\\ubuntu_bg.jpg"
 	},
 	{
 	    "guid": "{00000000-0000-0000-ba54-000000000002}",
@@ -65,7 +65,7 @@
 	    "fontFace" : "Consolas",
 	    "fontSize" : 10,
 	    "historySize" : 9001,
-	    "icon" : "C:\\Users\\kahl\\ter_profile\\res\\git-bash_32px.ico",
+	    "icon" : "C:\\Users\\Kahl\\ter_profile\\res\\git-bash_32px.ico",
 	    "name" : "Bash",
 	    "padding" : "0, 0, 0, 0",
 	    "snapOnInput" : true,
@@ -76,6 +76,12 @@
             "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
             "hidden": false,
             "name": "Ubuntu",
+            "source": "Windows.Terminal.Wsl"
+        },
+        {
+            "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+            "hidden": false,
+            "name": "Ubuntu-20.04",
             "source": "Windows.Terminal.Wsl"
         }
     ],
@@ -192,19 +198,9 @@
     // Add any keybinding overrides to this array.
     // To unbind a default keybinding, set the command to "unbound"
     "keybindings": [
-           {
-                "command" : "splitHorizontal",
-                "keys" : 
-                [
-                    "shift+alt+T"
-                ]
-            },
-            {
-                "command" : "splitVertical",
-                "keys" : 
-                [
-                    "shift+alt+R"
-                ]
-            }
+           { "command": { "action": "splitPane", "split": "vertical" }, "keys": "alt+shift+v" },
+           { "command": { "action": "splitPane", "split": "horizontal" }, "keys": "alt+shift+h" },
+           { "command": { "action": "splitPane", "split": "auto" }, "keys": "alt+shift+s" },
+
     ]
 }
